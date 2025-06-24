@@ -1,9 +1,7 @@
 # sniffer
 
-This is CUI application using libpcap and operation guarantee is only Ubuntu 16.04.3 LTS
+O [sniffer escolhido](https://github.com/homoluctus/sniffer-with-libpcap) possuia suporte para IPv4, TCP, UDP e Ethernet, cada um com seu respectivo código para realizar a exibição dos cabeçalhos.
 
-So, you must install `libpcap` to use this
+Desenvolvido em C, utilizando a biblioteca libpcap e focado no Ubuntu 16.04.3 LTS.
 
-There is no dependency on each c file, so compile and run on each
-
-When executed, display the header information (Supported protocol is ethernet, ipv4, tcp and udp)
+Adicionei o suporte para IPv6 com a exibição do seu cabeçalho, além de juntar as outras funcionalidades a verificação de IPv4, TCP e UDP no mesmo arquivo para que tudo seja analisado junto. Não foi adicionada a exibição do protocolo de Ethernet pois eram exibidos pacotes demais, o que dificultava a visualização dos outros pacotes.
